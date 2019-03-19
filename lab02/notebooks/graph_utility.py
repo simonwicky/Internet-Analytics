@@ -6,6 +6,9 @@ def histogram(data):
 
 
 def numberOfNodesHops(start, r, G):
+    """
+    Return the list of nodes reachable from start in r hops
+    """
     neighbors = set([start])
     for i in range(r):
         neighbors = set([neighbor for node in neighbors \
